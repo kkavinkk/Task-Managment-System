@@ -1,3 +1,14 @@
-#main {
-    background-color: #0893FE;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #222;
+}
+
+.main {
+    text-align: center;
 }
