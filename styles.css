@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #222;
+    background: #ddd5d5;
 }
 
 .main {
@@ -14,4 +14,9 @@ body{
 
 }
 
-ADD COLOUR TO H1
+h1 {
+    font-size: 40px;
+    color: rgb(0, 89, 255);
+    margin: 40px 0 40px 0;
+}
+
