@@ -1,7 +1,7 @@
-const taskAdder = document.querySelector(".add-task")
-const addBttn = document.querySelector(".add-task button")
-const tasks = document.querySelector(".tasks")
-const doneTask = document.querySelector(".checkbox")
+// Add tasks
+    // type in a task in the input box
+    //Press the button to make the task show up below
 
-let inputData = ""
-let page = 2;
+// Once a task is checked make it go away(another clear button?, Or a switch we finna find out)
+
+// Make the Clear button clear everything
