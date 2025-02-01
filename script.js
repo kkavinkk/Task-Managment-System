@@ -3,9 +3,8 @@
     const taskBttn = document.querySelector(".add-task button")
     const tasks = document.querySelector("#taskList")
     // type in a task in the input box
-    function addTask(newTask) {
-        //get input value and delete extra space 
-        const taskText = inputTask.value.trim();
+    function addTask(newTask) { 
+        const taskText = inputTask.value.trim();//get input value and delete extra space
 
         if (taskText === "") return; // stops from adding a task with nothing
 
