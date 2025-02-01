@@ -7,6 +7,8 @@
     function addTask(newTask) { 
         newTask = inputTask.value;
         console.log(newTask)
+
+        
     //Press the button to make the task show up below
     }
 // Once a task is checked make it go away(another clear button?, Or a switch we finna find out)
