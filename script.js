@@ -9,29 +9,31 @@
         if (taskText === "") return; // stops from adding a task with nothing
 
         const label = document.createElement("label");
-        label.classList.add("container");
+        label.classList.add("container"); // Mannually adds container of tasks
 
         const checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
+        checkbox.type = "checkbox"; // adds the check box
         checkbox.checked = false; // Default unckecked
 
         const checkmark = document.createElement("div");
-        checkmark.classList.add("checkmark");
+        checkmark.classList.add("checkmark"); // Adds check mark
 
         const taskDiv = document.createElement("div");
-        taskDiv.classList.add("tasks");
-        taskDiv.textContent = taskText;
+        taskDiv.classList.add("tasks"); // Adds the task itself
+        taskDiv.textContent = taskText; // puts the input content in it
 
+        // Now we must call all of them to add
         label.appendChild(checkbox);
         label.appendChild(checkmark);
         label.appendChild(taskDiv);
         taskList.appendChild(label);
 
-        inputTask.value = "";
+
+        inputTask.value = ""; // resets task input to blank
         
     //Press the button to make the task show up below
     }
-    taskBttn.addEventListener("click", addTask)
+    taskBttn.addEventListener("click", addTask) // when the button is pressed but it down below
 // Once a task is checked make it go away(another clear button?, Or a switch we finna find out)
 
 // Make the Clear button clear everything
