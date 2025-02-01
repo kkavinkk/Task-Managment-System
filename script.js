@@ -3,7 +3,7 @@
     const taskBttn = document.querySelector(".add-task button")
     const tasks = document.querySelector("#taskList")
     // type in a task in the input box
-    function addTask(newTask) { 
+    function addTask() { 
         const taskText = inputTask.value.trim();//get input value and delete extra space
 
         if (taskText === "") return; // stops from adding a task with nothing
@@ -31,9 +31,14 @@
 
         inputTask.value = ""; // resets task input to blank
         
-    //Press the button to make the task show up below
+    
     }
+    //Press the button to make the task show up below
     taskBttn.addEventListener("click", addTask) // when the button is pressed but it down below
 // Once a task is checked make it go away(another clear button?, Or a switch we finna find out)
-
+    function clearTasks(checkbox) {
+        if (checkbox = false){
+            doneTasks
+        }
+    }
 // Make the Clear button clear everything
