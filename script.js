@@ -28,10 +28,16 @@
         label.appendChild(taskDiv);
         taskList.appendChild(label);
 
+        // Listen for if task is completed
+        checkbox.addEventListener("change", function () {
+            if (checkbox.checked) {
+                checkedTasks.add(label);
+            }
+        });
+
+
 
         inputTask.value = ""; // resets task input to blank
-        
-    
     }
     //Press the button to make the task show up below
     taskBttn.addEventListener("click", addTask) // when the button is pressed but it down below
