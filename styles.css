@@ -42,6 +42,11 @@ h1 {
     box-shadow: 5px 5px 0 #000, 10px 10px 0 #4a90e2;
 }
 
+.add-task input:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
 .add-task button {
     padding: 15px;
     font-size: 18px;
