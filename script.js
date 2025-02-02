@@ -31,7 +31,9 @@
         // Listen for if task is completed
         checkbox.addEventListener("change", function () {
             if (checkbox.checked) {
-                checkedTasks.add(label);
+                checkedTasks.add(label); // Adding to set when done
+            } else {
+                checkedTasks.delete(label); // Remove from set when unchecked
             }
         });
 
