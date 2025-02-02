@@ -2,6 +2,7 @@
     const inputTask = document.querySelector(".add-task input")
     const taskBttn = document.querySelector(".add-task button")
     const tasks = document.querySelector("#taskList")
+    const clearBttn = document.querySelector(".terminate-tasks")
     // type in a task in the input box
     function addTask() { 
         const taskText = inputTask.value.trim();//get input value and delete extra space
@@ -37,16 +38,15 @@
             }
         });
 
-
-
         inputTask.value = ""; // resets task input to blank
     }
     //Press the button to make the task show up below
     taskBttn.addEventListener("click", addTask) // when the button is pressed but it down below
 // Once a task is checked make it go away(another clear button?, Or a switch we finna find out)
-    function clearTasks(checkbox) {
-        if (checkbox = false){
-            doneTasks
-        }
+    function clearTasks() {
+        checkedTasks.forEach(task => task.remove()); // remove checed tasks
+        checkedTasks.clear();
     }
+
+clearBttn.addEventListener("click", clearTasks);
 // Make the Clear button clear everything
