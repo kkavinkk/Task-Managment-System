@@ -46,6 +46,11 @@ function addTask() {
 }
 //Press the button to make the task show up below
 taskBttn.addEventListener("click", addTask) // when the button is pressed but it down below
+inputTask.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        addTask();
+    }
+});
 // Once a task is checked make it go away(another clear button?, Or a switch we finna find out)
 function clearTasks() {
     checkedTasks.forEach(task => task.remove()); // remove checed tasks
