@@ -3,6 +3,7 @@ const inputTask = document.querySelector(".add-task input")
 const taskBttn = document.querySelector(".add-task button")
 const tasks = document.querySelector("#taskList")
 const clearBttn = document.querySelector("#terminate-tasks")
+const clearAllBttn =  document.querySelector("#clear_all_tasks")
 
 // emptys set for cleared tasks
 const checkedTasks = new Set();
@@ -53,3 +54,9 @@ function clearTasks() {
 
 clearBttn.addEventListener("click", clearTasks);
 // Make the Clear button clear everything
+function clearAll() {
+    tasks.innerHTML = "";
+    tasks.clear();
+}
+
+clearAllBttn.addEventListener("click", clearAll);
