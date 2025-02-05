@@ -13,7 +13,7 @@ Make sure you have **Node.js** installed on your system.
 ### **2️⃣ Clone the Repository**
 Open a terminal and run:
 ```sh
-git clone https://github.com/your-username/Task-Management-System.git
+git clone https://github.com/kkavinkk/Task-Management-System.git
 cd Task-Management-System
 ```
 
