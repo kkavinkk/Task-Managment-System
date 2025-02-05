@@ -51,6 +51,40 @@ inputTask.addEventListener("keydown", function (event) {
         addTask();
     }
 });
+// Function to grey checked tasks and move to the bottom
+function updateTaskList() {
+    const taskcontainer = document.querySelector("#task-list")
+    const tasks = Array.from(taskcontainer.children);
+
+    tasks.forEach(task => {
+        const checkbox = task.querySelector("input[type='checkbox']");
+        const taskText = task.querySelector(".tasks");
+
+        if (checkbox.checked) {
+            taskText.style.color = "gray";
+            taskText.style.textDecoration = "line-through"
+        } else {
+            taskText.style.color = "";
+            taskText.style.textDecoration = "";
+        }
+    });
+    tasks.sort((a, b) => {
+        const aChecked = a.querySelector("input[type='checkbox']").checked;
+        const bChecked = b.querySelector("input[type='checkbox']").checked;
+        return aChecked - bChecked; // Moves checked tasks to bottom
+    });
+
+    tasks.forEach(task => taskcontainer.appendChild(task));
+}
+
+// Attach event listener to checkboxes
+document.addEventListener("change", function(event) {
+    if (event.target.matches("input[type='checkbox']")) {
+        updateTaskList();
+    }
+});
+
+
 // Once a task is checked make it go away(another clear button?, Or a switch we finna find out)
 function clearTasks() {
     checkedTasks.forEach(task => task.remove()); // remove checed tasks
