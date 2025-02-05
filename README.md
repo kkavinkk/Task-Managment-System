@@ -42,17 +42,6 @@ npm start
   ├── package.json      # Project metadata & dependencies
   ├── .gitignore        # Ignores node_modules
 ```
-
----
-
-## 📦 Packaging the App (Optional)
-To package the app as a desktop application:
-```sh
-npm install --save-dev electron-packager
-npx electron-packager . "TaskManager" --platform=win32 --arch=x64 --out=dist
-```
-Replace `win32` with `darwin` for macOS or `linux` for Linux.
-
 ---
 
 ## 📜 License
