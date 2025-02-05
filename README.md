@@ -20,7 +20,7 @@ cd Task-Management-System
 ### **3️⃣ Install Dependencies**
 Run this command to install Electron:
 ```sh
-npm install
+npm install --save-dev electron
 ```
 
 ### **4️⃣ Start the App**
@@ -49,7 +49,7 @@ npm start
 To package the app as a desktop application:
 ```sh
 npm install --save-dev electron-packager
-npx electron-packager . "TaskManager" --platform=win32 --arch=x64 --out=dist
+npx electron-packager . "TaskApp" --platform=win32 --arch=x64 --out=dist
 ```
 Replace `win32` with `darwin` for macOS or `linux` for Linux.
 
