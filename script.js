@@ -53,19 +53,19 @@ inputTask.addEventListener("keydown", function (event) {
 });
 // Function to grey checked tasks and move to the bottom
 function updateTaskList() {
-    const taskcontainer = document.querySelector("#task-list")
-    const tasks = Array.from(taskcontainer.children);
+    const taskcontainer = document.querySelector("#task-list"); // Declar the entire list
+    const tasks = Array.from(taskcontainer.children); // Put all tasks in one list
 
     tasks.forEach(task => {
-        const checkbox = task.querySelector("input[type='checkbox']");
-        const taskText = task.querySelector(".tasks");
+        const checkbox = task.querySelector("input[type='checkbox']"); // Declare the checkbox
+        const taskText = task.querySelector(".tasks"); // declare the single atsks
 
         if (checkbox.checked) {
-            taskText.style.color = "gray";
-            taskText.style.textDecoration = "line-through"
+            taskText.style.color = "gray"; // Gray out the text
+            taskText.style.textDecoration = "line-through" // striek out the tasks
         } else {
-            taskText.style.color = "";
-            taskText.style.textDecoration = "";
+            taskText.style.color = ""; // reset the color
+            taskText.style.textDecoration = ""; // remove the striek thought might lowk be bad designss
         }
     });
     tasks.sort((a, b) => {
