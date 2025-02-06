@@ -2,7 +2,7 @@
 
 A simple task management system built with **HTML, CSS, JavaScript**, and **Electron** to run as a desktop application.
 
-![DemoImage] TaskAppSS.png
+![DemoImage]Task-Managment-System\TaskAppSS.png
 
 ---
 
